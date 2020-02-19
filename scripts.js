@@ -37,3 +37,5 @@ dec.addEventListener("click", function() {
 const updateCounter = count => {
   counter.innerHTML = count;
 };
+
+updateCounter(count);
