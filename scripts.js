@@ -4,12 +4,33 @@ const dec = document.querySelector(".decrease");
 
 let count = 0;
 
+document.addEventListener("keydown", shiftedTrue);
+document.addEventListener("keyup", shiftedFalse);
+
+let shifted = false;
+
+function shiftedTrue() {
+  shifted = true;
+}
+function shiftedFalse() {
+  shifted = false;
+}
+
 inc.addEventListener("click", function() {
-  count += 1;
+  if (shifted) {
+    count += 10;
+  } else {
+    count += 1;
+  }
   updateCounter(count);
 });
+
 dec.addEventListener("click", function() {
-  count -= 1;
+  if (shifted) {
+    count -= 10;
+  } else {
+    count -= 1;
+  }
   updateCounter(count);
 });
 
