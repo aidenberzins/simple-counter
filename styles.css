@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  font-family: helvetica;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background: url("https://forsee.com.au/wp-content/uploads/2017/02/forsee-binary-code-bg.jpg")
+    center / cover no-repeat;
+}
+
+.container {
+  background-color: white;
+  padding: 2em;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 15px 10px;
+  border: none;
+  color: white;
+  font-size: ;
+  margin: 5px;
+}
+.increase {
+  background-color: green;
+}
+.decrease {
+  background-color: red;
+}
+
+#counter {
+  display: block;
+  font-size: 5em;
+}
