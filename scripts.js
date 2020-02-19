@@ -9,11 +9,18 @@ document.addEventListener("keyup", shiftedFalse);
 
 let shifted = false;
 
-function shiftedTrue() {
-  shifted = true;
+function shiftedTrue(e) {
+  console.log(e);
+  if (e.keyCode === 16) {
+    shifted = true;
+  }
+  return;
 }
-function shiftedFalse() {
-  shifted = false;
+function shiftedFalse(e) {
+  if (e.keyCode === 16) {
+    shifted = false;
+  }
+  return;
 }
 
 inc.addEventListener("click", function() {
